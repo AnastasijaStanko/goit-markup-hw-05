@@ -52,7 +52,7 @@ ol {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    color: var();
+   
 }
 
 .header-nav {
@@ -84,7 +84,6 @@ ol {
     align-items: center;
     gap: 50px;
 }
-
 
 .header-list {
     display: flex;
@@ -150,6 +149,7 @@ color: #FFFFFF;
             line-height: 1.14;
             letter-spacing: 0.02em;
             color: var(--main-title-color);
+            transition: color 250ms linear;
         }
 
         .item-border:hover, .item-border:focus {
@@ -196,10 +196,6 @@ color: #FFFFFF;
             align-items: center;
         }
 
-        .container-items .button:hover {
-            background-color: var(--main-btn-color);
-            color: var(--secondary-title-color);
-        }
         .link-mail, .link-logo-tel {
             font-weight: 500;
             line-height: calc(16 / 14);
@@ -214,7 +210,7 @@ color: #FFFFFF;
             text-align: center;
             letter-spacing: 0.03em;
             color: var(--main-title-color);
-        
+            
         }
         .filter-button {
         cursor: pointer;
@@ -230,6 +226,7 @@ color: #FFFFFF;
         color: #212121;
         background-color: #F5F4FA;
         border-radius: 4px;
+        transition: background-color 250ms linear, color 250ms linear;
         }
 
     .filter-button:focus, .filter-button:hover {
@@ -302,6 +299,7 @@ color: #FFFFFF;
             border: 1px solid #EEEEEE;
             width: calc((100% - 60px) / 3);
             margin-bottom: 30px; 
+            transition: box-shadow 250ms linear;
          }
         .project-list {
             padding: 20px 24px;
@@ -328,7 +326,7 @@ color: #FFFFFF;
             padding-right: 24px;
          }
          
-         .footer-container {
+        .footer-container {
             display: flex;
             height: 252px;
             background-color: #2F303A;
@@ -336,7 +334,7 @@ color: #FFFFFF;
             padding-bottom: 60px;
             padding-left: 215px;
         }
-         .project-text {
+        .project-text {
             font-size: 16px;
             line-height: calc(30 / 16);
             letter-spacing: 0.03em;
@@ -353,13 +351,15 @@ color: #FFFFFF;
          .footer-adress {
             line-height: 24px;
             letter-spacing: 0.03em;
-            color: var(--secondary-title-color)
+            color: var(--secondary-title-color);
+            transition: color 250ms linear;
          }
 
          .footer-mail, .footer-tel {
             line-height: 24px;
             letter-spacing: 0.03em;
             color: rgba(255, 255, 255, 0.6);
+            transition: color 250ms linear;
          }
 
          .soc-footer {
