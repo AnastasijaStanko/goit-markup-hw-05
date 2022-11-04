@@ -299,8 +299,34 @@ color: #FFFFFF;
             border: 1px solid #EEEEEE;
             width: calc((100% - 60px) / 3);
             margin-bottom: 30px; 
-            transition: box-shadow 250ms linear;
+            transition: box-shadow 250ms linear;  
          }
+
+        .text-item-wrap {
+        position: relative;
+        overflow: hidden;
+        }
+             
+         .project-text-item {
+            position: absolute;
+            top: 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: calc(28 / 18);
+            letter-spacing: 0.03em;
+            padding: 63px 24px;
+            height: 100%;
+            background-color: rgba(33, 150, 243, 0.9);;
+            color: var(--secondary-title-color);
+            transform: translateY(100%);
+            transition: 250ms linear;
+         }
+
+         .item-border:hover .project-text-item {
+            transform: translateY(0);
+            }
+    
+         
         .project-list {
             padding: 20px 24px;
          }
@@ -393,6 +419,14 @@ color: #FFFFFF;
                 width: 44px;
                 height: 44px;
             }
+    
+    .backdrop {
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        position: fixed;
+        top: 0;
+    }
             
 
         
