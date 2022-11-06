@@ -89,9 +89,8 @@ ol {
 
 .header-container {
     display: flex;
-    align-items: center;
+    margin-right: auto;
 }
-
 .main-navigation {
     margin-left: 93px;
     display: flex;
@@ -122,11 +121,13 @@ ol {
 
 .icon-list {
     display: flex;
+    gap: 30px;
 
 }
 
-.envelope {
-    color: currentColor;
+.contact-items {
+    width: 16px;
+    height: 12px;
 }
 
 .header-list {
@@ -550,7 +551,7 @@ color: var(--secondary-title-color);
     margin-right: 70px;
 }
 
-.backdrop {
+/* .backdrop {
     width: 100%;
     height: 100%;
     background-color: #FFFFFF;
@@ -566,4 +567,4 @@ color: var(--secondary-title-color);
     top: 50%;
     left: 50%;
     transform: translate (-50%, -50%);
-}
+} */
