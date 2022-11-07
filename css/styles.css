@@ -578,4 +578,12 @@ color: var(--secondary-title-color);
     position: absolute;
     right: 10px;
     top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.modal-close:focus {
+    color: var(--main-btn-color);
 }
