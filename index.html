@@ -48,7 +48,7 @@
         <section  class="section hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="button" type="button">Замовити послугу</button>
+                <button class="button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="section section-about">
@@ -269,7 +269,7 @@
     </main>
        
         <footer class="footer-container">
-                <div class="footer-items">
+                <div class="container">
                     <section class="online-section">
                         <a class="logo-footer logo-link link" href="/index.html">Web<span class="logo-header-footer">Studio</span></a>
                                      <ul class="footer-list list">
@@ -282,8 +282,6 @@
                                     </ul>
                     </section>        
                 </div>
-                
-                    <section class="soc-section">
                        <div class="">
                             <p class="soc-footer">Приєднуйтесь</p>
                         <ul class="footer-soc-link">
@@ -309,18 +307,17 @@
                             </a></li>
                         </ul>
                        </div>
-                    </section>
         </footer>  
 
-        <div class="backdrop">
+        <div class="backdrop" data-modal>
             <div class="modal">
-                <button type="button" class="modal-close">
+                <button type="button" class="modal-close" data-modal-close>
                     <svg class="modal-close" widht="18" height="18">
                         <use href="./images/symbol-defs-main-icons.svg#icon-close"></use>
                     </svg>
                 </button>
             </div>
         </div>
-        
+        <script src="./js/modal.js"></script>  
 </body>
 </html>
