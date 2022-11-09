@@ -137,6 +137,16 @@ ol {
     margin-left: 93px;
 }
 
+.nav-item {
+    content: '';
+    display: inline-block;
+    width: 48px;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+}
+    
+
 .logo-link {
     font-family: 'Raleway';
     font-size: 26px;
@@ -176,7 +186,7 @@ ol {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
-    transition: color 250ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-list:hover, .header-list:focus {
@@ -211,7 +221,7 @@ ol {
     color: var(--about-text-color);
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition: color 200ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-header {
 display: flex;
@@ -224,7 +234,7 @@ gap: 10px;
     color: var(--about-text-color);
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition: color 200ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-hero {
@@ -365,7 +375,7 @@ gap: 10px;
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
-    transition: background-color 250ms linear, fill 250ms linear;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -504,7 +514,7 @@ margin-bottom: 20px;
     letter-spacing: 0.03em;
     color: var(--secondary-title-color);
     margin-bottom: 9px;
-    transition: color 250ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail {
@@ -512,7 +522,7 @@ margin-bottom: 20px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
-    transition: color 250ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -521,7 +531,7 @@ margin-bottom: 20px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
-    transition: color 250ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list {
     display: flex;
@@ -560,10 +570,10 @@ color: var(--secondary-title-color);
 }
 
 .modal {
+    position: absolute;
     width: 581px;
     min-height: 528px;
     background-color: var(--secondary-title-color);
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate (-50%, -50%);
